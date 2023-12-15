@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 // import React from 'react';
 import { useSession, signIn, signOut } from 'next-auth/react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
@@ -16,6 +16,9 @@ const Login = () => {
     // console.log(router.asPath, 'asPath');
     console.log(router, 'router');
   }, []);
+  // if (session) {
+  //   router.push('/about');
+  // }
   return (
     <>
       <section className="bg-gray-50 dark:bg-gray-900 my-7">
